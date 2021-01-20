@@ -1,0 +1,8 @@
+{
+  "name": "p2p-cdn-image-worker",
+  "main": "index.js",
+  "private": true,
+  "description": "CDN example for P2P project.",
+  "version": "0.1.0",
+  "license": "MIT"
+}
