@@ -3,11 +3,12 @@ addEventListener('fetch', event => {
 })
 
 // This would be whatever you have setup in AWS.
-const BUCKET_NAME = 'somebucketname'
-const REGION = 'sample-region-x'
+const BUCKET_NAME = 'jtp.imageupload.test'
+const REGION = 'us-east-2'
 const BUCKET_URL = `https://s3.${REGION}.amazonaws.com/${BUCKET_NAME}`
 
 async function servePicture(event) {
+  console.log('Testing deploy...')
   const url = new URL(event.request.url)
   const cache = caches.default
   let response = await cache.match(event.request)
