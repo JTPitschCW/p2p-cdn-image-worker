@@ -1,0 +1,4 @@
+name = "p2p-image-test"
+account_id = "49b48a72ad796a67c6831e0d92ca78af"
+type = "webpack"
+workers_dev = true
