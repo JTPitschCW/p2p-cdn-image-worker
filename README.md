@@ -16,8 +16,14 @@ The steps from above tutorial:
 
 Example Request: `images.p2p-images.workers.dev/1234/image.jpg`
 
-The script is currently set up to use the listings ID along with the assests name.  This is under the assumption that this is how the images are stored.
+The script is currently set up to use the listings `ID` along with the `assest`name.  This is under the assumption that this is how the images are stored.
 
 ## How to Deploy
 
-//TODO - Working on setting up an example of using Github Actions to deploy when there is a merge into the `main` branch.
+With the use of Github Actions the repo is able to deploy when there is a merge into the `main` branch.  A few steps will need to be taken in order for this to be accomplished:
+
+- In the `wrangler.toml` file the fields will need to verify the `name` and `account_id` fields.
+  - `name` refers to the worker name configured in Cloudflare.
+  - `account_id` is the main account ID that will be deployed to that holds the worker.  More information can be found [here](https://support.cloudflare.com/hc/en-us/articles/200167836-Managing-API-Tokens-and-Keys).
+- An API token will need to be created for workers with the correct credentials to be able to deploy.
+- The repo will need to contain a secret which can be created by following this [setting secrets](https://docs.github.com/en/actions/reference/encrypted-secrets)
