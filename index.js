@@ -3,8 +3,8 @@ addEventListener('fetch', event => {
 })
 
 // This would be whatever you have setup in AWS.
-const BUCKET_NAME = 'jtp.imageupload.test'
-const REGION = 'us-east-2'
+const BUCKET_NAME = 'yourbucketname'
+const REGION = 'your-aws-region'
 const BUCKET_URL = `https://s3.${REGION}.amazonaws.com/${BUCKET_NAME}`
 
 async function servePicture(event) {
