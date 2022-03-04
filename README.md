@@ -2,6 +2,8 @@
 
 This is a demo project on how to hook up the workers to S3 in order to serve images.  This is currently set up to hook into AWS but the URL structure can easily be changed to support whatever service is being used.
 
+Hi
+
 ## Local Setup
 
 In order to run this locally you will need to have a Cloudflare account as well as both `Node` and `NPM` installed.  Can read the tutorial [here](https://developers.cloudflare.com/workers/learning/getting-started)
